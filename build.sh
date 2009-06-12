@@ -26,9 +26,9 @@ pushd git_build
         mv Makefile_tmp Makefile
 
 	# Make fat binaries with ppc/32 bit/64 bit
-        make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" prefix=$PREFIX all
-        make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" prefix=$PREFIX strip
-        $SUDO make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch i386" prefix=$PREFIX install
+        make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" prefix=$PREFIX all
+        make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" prefix=$PREFIX strip
+        $SUDO make CFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" LDFLAGS="-isysroot /Developer/SDKs/MacOSX10.5.sdk -arch ppc -arch i386 -arch x86_64 -arch ppc64" prefix=$PREFIX install
 
         # contrib
         $SUDO mkdir -p $PREFIX/contrib/completion
