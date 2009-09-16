@@ -9,7 +9,7 @@ open Disk\ Image/git*.pkg
 
 read -n 1
 
-for file in /etc/paths.d/git /etc/manpaths.d/git /usr/local/git/bin/git "/usr/local/git/share/git-gui/lib/Git Gui.app/Contents/Info.plist"; do
+for file in /etc/paths.d/git /usr/local/git/bin/git "/usr/local/git/share/git-gui/lib/Git Gui.app/Contents/Info.plist"; do
   printf "'$file'"
   if [ -f "$file" ]; then
     echo " - exists"
