@@ -19,6 +19,9 @@
   </config>
   <contents>
     <file-list>01git-contents.xml</file-list>
+    <component id="cz.or.repo.git-gui" path="/usr/local/git/share/git-gui/lib/Git Gui.app" version="0.12.0.23.ga91be-dirty">
+      <mod>isRelocatable</mod>
+    </component>
     <filter>/CVS$</filter>
     <filter>/\.svn$</filter>
     <filter>/\.cvsignore$</filter>
